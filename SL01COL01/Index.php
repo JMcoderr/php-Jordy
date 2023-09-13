@@ -60,3 +60,13 @@ foreach ($hobbies as $hobby) {
 }
 //Zet de timezone naar die van Europa/Amsterdam
 date_default_timezone_set('Europe/Amsterdam');
+
+$currentTime = date("H");
+
+if ($currentTime < 12       ){
+    $achtergrondKleur = "#fffdfc";
+}else{
+    $achtergrondKleur = "#707070";
+}?>
+
+<body style="background-color:<?php echo $achtergrondKleur?>">
